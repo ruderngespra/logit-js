@@ -1,4 +1,4 @@
-console.log('%c Hello', 'color: orange');
+console.log("%c Hello", "color: orange");
 
 const testArray = [{ test: 1 }, { test: 1 }, { test: 1 }];
 

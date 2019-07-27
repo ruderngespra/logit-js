@@ -15,5 +15,7 @@
   "author": "ruderngespra",
   "license": "ISC",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "prettier": "^1.18.2"
+  }
 }
