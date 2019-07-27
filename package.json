@@ -16,6 +16,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
+    "chalk": "^2.4.2",
+    "eslint": "^6.1.0",
     "prettier": "^1.18.2"
   },
   "devDependencies": {
