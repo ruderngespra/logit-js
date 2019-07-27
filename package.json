@@ -17,5 +17,8 @@
   "private": true,
   "dependencies": {
     "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
