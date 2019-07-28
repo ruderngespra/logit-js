@@ -1,0 +1,19 @@
+
+---
+
+Aktueller Stand der Dinge:
+
+Es gibt drei zentrale Pakete, die ich evtl. nutzen könnte: Eslint,
+prettier und babel. Im Moment tendiere ich zu eslint. Dieses hat eine
+--fix Option mit die mit der rule "semi": 2 zusammenarbeitet und damit
+automatisch semikolons in den Text schreibt.
+
+Das Problem ist, dass der Rest des Textes nicht unberührt bleibt.
+
+---
+
+Ich muss mich mit diesen Konfigurationen noch weiter
+auseinandersetzen, und falls es NICHT gelingt, gibt es das Paket als
+Workaround nur so, dass man davon ausgeht, dass die Semikolons halt
+sauber gesetzt sind.
+

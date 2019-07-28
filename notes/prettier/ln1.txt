@@ -1,0 +1,26 @@
+
+Ein paar Optionen.
+
+- Ich brauche ein paar Optionen, die dann angeschaltet werden müssen
+  bei bestimmer Syntax, die geloggt werden soll.
+
+- Etwa: Die array funktionen brauchen manchmal klammern, um ein
+  bestimmtes log einzufügen.
+
+- Die debug-check funktionalität muss hinterher laufen und notfalls
+  alles zurückstellen.
+
+- Unbedingt die semicolons: true option. Denn diese nutze ich, um die
+  einzelnen statements voneinander zu trennen.
+
+- Arrow Function Parentheses: Das ist noch nicht genau das, was ich
+  brauche, da nur für die Parameterklammer und nicht die im body, aber
+  auch wichtig:
+
+- RANGE: Unbedingt auch nutzen: Denn ich will nur innerhalb des logit
+  bereichs überhaupt formattieren! Sehr gut.
+
+---
+
+Grundsätzlich siehe hier: https://prettier.io/docs/en/options.html
+

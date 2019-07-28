@@ -1,0 +1,9 @@
+
+Ich mache jetzt mal Schritt für Schritt die Dinge aus dem Node-Buch:
+
+1. lib und bin verzeichnisse
+
+Dann grundsätzlich ein paar Hilfsfunktionen-Dateien im lib verzeichnis und
+auch alle anderen scripts hier ablegen. In bin nur die ausführbare
+datei, die dann rüberlinkt.
+

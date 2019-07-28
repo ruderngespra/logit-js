@@ -1,0 +1,67 @@
+
+Sich das hier ein bisschen angucken:
+
+https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md
+
+babel hat einen sehr grandiosen Haufen Funktionalität bereitliegen.
+
+Grundstruktur:
+
+Man läuft eben mit dem Programm durch einen Syntax-Baum, und kann
+überall einhaken und Sachen verändern und wieder rausgehen etc.
+
+Und man schreibt immer "Visitors", die an dem Text an einem bestimmten
+Node etwas ändern.
+
+Mein Ansatz wäre auch: An bestimmten Nodes console logs einfügen.
+
+---
+
+mit babylon parsed man strings aus js-code und verwandelt sie in asts.
+
+also, was man mit babel machen könnte: man hätte sehr entspannt
+zugriff auf verschiedene Teile von js expressions, deren namen
+etc.. Dann könnte man sich diese teile nehmen und hieraus neue
+interessante logs bauen, die man dann hoffentlich irgendwie an die
+nodes anhängen könnte.
+
+Also, der wesentliche Vorteil wäre: Ich würde nicht mehr per Hand und
+mit kruden Regular Expressions an die Syntax meines JS-Codes gehen,
+sondern eben mit Hilfe der kompletten Babel Maschinerie, die mir diese
+Syntax schon super gut in ein AST auseinanderbaut.
+
+etwa sowas:
+
+import traverse from "babel-traverse";
+import * as t from "babel-types";
+
+traverse(ast, {
+  enter(path) {
+    if (t.isIdentifier(path.node, { name: "n" })) {
+      path.node.name = "x";
+    }
+  }
+});
+
+Es gibt tausend Infos über Typen, es werden die einzelnen expressions
+zerlegt und und und.
+
+---
+
+und es gibt anscheinend schon ein babel plugin das console logs
+ENTFERNT.
+
+Mit babel-generator kann man neue nodes und expressions bauen. das
+heißt, aus nodes generiert der generator eben wieder js code.
+
+babel template ebenfalls,
+
+---
+
+In diesen Docs unter manipulation dann sowas wie: 
+
+path.insertAfter(t.expressionStatement(t.stringLiteral("A little high,
+little low.")));
+
+Es geht irgendwie, auf jeden Fall.
+

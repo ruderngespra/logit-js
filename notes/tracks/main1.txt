@@ -1,0 +1,11 @@
+
+Eine Version bauen, die funktioniert und schon als eigenständiges
+npm Paket implementiert werden könnte. Sie enthält folgende Basic-Funktionalität:
+
+Das Programm teilt alle Zeilen auf und schreibt an diejenigen, die
+let, const oder var enthalten, simple logs, und dann baut es alles
+wieder zusammen und gibt es als neue Datei aus.
+
+---
+
+Vorher nichts anderes.

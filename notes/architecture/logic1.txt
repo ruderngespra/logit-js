@@ -1,0 +1,19 @@
+
+SCHRITTE, die logit bei jedem parsen durchlaufen sollte:
+
+1. Die Datei wird mit Hilfe von prettier und/oder babel präpariert:
+   Was dabei rauskommt:
+   Ein neuer String, der den Text zwischen den in der Ausgangsdatei
+   gesetzten Grenzen enthält und zwar auf eine Weise präpariert, dass
+   die logs problemlos hineingeschrieben werden können.
+
+2. Jetzt werden in diesem String alle Stellen gesucht, die logs
+   brauchen. Welche das sind hängt ab von den per command-line
+   übergebenen optionen. Evtl. nur bestimmte variablen, default alle,
+   etc.
+
+3. Der Text wird wieder zusammengesetzt und die neue Datei
+   überschreibt die alte (oder erstellt eine Kopie je nach Option.)
+   
+---
+

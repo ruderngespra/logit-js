@@ -1,0 +1,3 @@
+
+- Wissen, wie man die Schriftart in meinem Terminal größer und kleiner
+  und dunkel und hell macht sowie hintergrund!!
