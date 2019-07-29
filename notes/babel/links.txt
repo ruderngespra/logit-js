@@ -1,0 +1,7 @@
+
+
+// Zum allgemeinen Informieren:
+https://babeljs.io/videos.html
+
+// Sehr hilfreiches Arbeitstool, um in den ASTs klarzukommen:
+https://astexplorer.net/#/KJ8AjD6maa

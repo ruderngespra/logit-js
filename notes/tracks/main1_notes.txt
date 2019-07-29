@@ -198,4 +198,14 @@ bereit.
 Man könnte überlegen, ein babel plugin zu schreiben, also logit als
 babel plugin zu nutzen.
 
+---
 
+Okay, siehe ast notes, das scheint tatsächlich irgendwie machbar zu
+sein, so ein plugin zu bauen.
+
+---
+
+Also, der nächste Schritt wäre, ein dummy plugin zu schreiben und in
+meinen Paket workflow einzubauen.
+
+Und von dort sich dann an die komplexere Dynamik zu machen.

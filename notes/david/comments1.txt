@@ -1,0 +1,15 @@
+
+Grundsätzlich ist David mit meinem Projekt einverstanden.
+
+Ich solle mich ausdrücklich mit den Babel-Plugins auseinandersetzen,
+das sei viel Arbeit aber völlig machbar.
+
+Die zentrale Aufgabe wird dann mutmaßlich genau das sein, ein
+Babel-Plugin zu schreiben, statt Regular Expressions, und mit dessen
+Hilfe sehr elegant auf Teile der Syntax zuzugreifen.
+
+---
+
+Mein erster Schritt: Ein Dummy-Babel-Plugin schreiben, das IRGENDWAS
+tut.
+
