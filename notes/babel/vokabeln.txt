@@ -1,0 +1,16 @@
+
+FunctionDeclaration
+
+BlockStatement
+
+Identifier
+
+expression
+
+BinaryExpression
+
+---
+
+Was ich tun möchte ich STATISCHE Analyse (im Gegensatz zu dynamischer,
+die zur Laufzeit stattfindet).
+

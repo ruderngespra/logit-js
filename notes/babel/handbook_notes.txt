@@ -1,0 +1,78 @@
+
+Also, alles besteht aus Nodes, die eine Reihe von Infos über den
+entsprechenden Teil des Codes besitzen.
+
+Identifier, FunctionDeclaration, Positionen innerhalb des Codes etc.
+
+Namen.
+
+expression true oder false.
+
+---
+
+BABEL macht drei Sachen:
+
+parsen, transformen, generieren.
+
+Das parsen, mutmaßlich, übernimmt Babel komplett für mich.
+
+Dann habe ich den AST und kann mit diesem arbeiten.
+
+tokens, als zwischenstand vor dem eigentlich fertig kompilierten ast.
+
+und dann die TRANSFORM stage.
+
+Das ist das, was mich interessiert. Ich will bestimmte Nodes in den
+AST einhängen.
+
+Und ich werde tree traversal betreiben müssen, das heißt durch den
+kompletten baum einmal durchlaufen.
+
+---
+
+visitors:
+
+visitors sind die pattern, mit denen man die nodes an den
+verschiedenen stellen besucht.
+
+Ich werde also in jedem Fall auch Visitors erstellen müssen für mein
+Plugin.
+
+Also, man kann Visitors erstellen und diese bekommen dann bestimmte
+Methoden, die bestimmten Node-Typen entsprechen, und immer wenn dann
+einer dieser Node-Typen gefunden wird, wird das ausgeführt, was in dem
+Visitor stattfindet.
+
+Evtl. kann ich auch aliase definieren für bestimmte Node-Gruppen.
+
+Evtl: Eine bestimmte Gruppe auswählen und predefinieren und dann
+hinterher nur in dieser Gruppe loggen!
+
+path.node.name
+
+---
+
+STATE
+
+Die potenziellen State-Probleme, die in den Docs erwähnt werden,
+können auch bei mir aufkommen.
+
+---
+
+SCOPES
+
+(...)
+
+---
+
+Grundsätzlich besteht babel aus einem haufen module, die verschiedene
+Dinge erledigen. Ich nutze davon mutmaßlich manche, andere wiederum
+werde ich gar nicht brauchen.
+
+---
+
+Mit Babylon parse ich. Das heißt, das brauche ich mutmaßlich an den
+AST zu kommen.
+
+Es sei denn, dafür gibt es plugin build funktionalitäten.
+

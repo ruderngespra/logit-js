@@ -1,0 +1,2 @@
+
+Also, nächster Schritt, irgendwie IN das Projekt ein babel plugin integrieren.

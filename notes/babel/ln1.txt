@@ -32,3 +32,7 @@ will kompatibilität für alte browser, was dann zu sehr viel
 komplexeren umbauten führt, als die, die ich mir wünsche.
 
 eben zum beispiel bei arrow funktionen.
+
+---
+
+
