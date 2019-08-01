@@ -1,0 +1,28 @@
+
+- Jest als dev dependency installieren.
+
+1. Wo werden die tests gespeichert? Als anhängsel für konkrete Files
+oder in dem __testing__ ordner? Eher letzteres.
+
+2. Was sollen meine tests?
+
+Im großen und Ganzen testen die auf der obersten Ebene die zentrale
+Funktion / das Modul "logit".
+
+Dieses Modul nimmt in der grundsätzlichsten Variante einen String an
+und wirft einen neuen String raus.
+
+Neben dem String, welcher der erste Parameter ist, kann man optional
+im zweiten Parameter ein Config-Objekt übergeben. Auch dafür soll es
+dann Tests geben.
+
+(All das muss dann später von dem command line ansatz übersetzt
+werden, aber das ist zweitranging.)
+
+Ich brauche mehrere Files:
+
+1. Simple Strukturtests auf der obersten Ebene:
+
+Komplette Scripts ohne Zeilenangaben etc., die einfach komplett mit
+sauberen logs vollgeschrieben werden.
+

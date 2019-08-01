@@ -1,0 +1,13 @@
+
+WRITING CUSTOM BABEL PLUGINS
+
+lodash als beispiel plugin:
+
+noch ein beispiel, welches unnütze proptype declarations aus react
+code entfernt.
+
+ASTs are not scary.
+
+In diesem Vortrag passiert wirklich genau das, was ich will.
+
+
