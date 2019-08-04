@@ -69,3 +69,5 @@ Und es müsste: Eine Option, irgendwo eine config file herumliegend,
 gesucht werden und wenn es die gibt, dann die nehmen, und wenn nicht
 dann default einstellungen.
 
+https://prettier.io/docs/en/options.html
+
