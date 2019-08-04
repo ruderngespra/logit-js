@@ -1,5 +1,5 @@
 // Das ist bisher nur ein temporärer Pfad:
-const transformString = require('./../lib/index.js');
+const transformString = require('./../lib/transformString.js');
 const testStrings = require('./../samples/provideTestStrings.js');
 
 // Dummy test:
