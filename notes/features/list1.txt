@@ -1,8 +1,0 @@
-
-Zwei Ideen von David:
-
-- Vielleicht sollen einfach ALLE EXPRESSION STATEMENTS geloggt werden?
-
-- Vielleicht soll man etwas mit 'use strict' Vergleichbares an den
-  Anfang schreiben und dann wird automatisch alles geloggt.
-

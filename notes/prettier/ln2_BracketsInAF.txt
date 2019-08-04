@@ -1,7 +1,0 @@
-
-Es scheint keine standard prettier option zu geben, die (a) => a in
-(a) => {return a} umschreibt.
-
-könnte man fast schon selbst machen.
-
-oder aber babel fragen.

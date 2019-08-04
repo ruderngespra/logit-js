@@ -1,4 +1,0 @@
-
-Zum Beispiel sehr spannend:
-
-@babel/plugin-transform-arrow-functions

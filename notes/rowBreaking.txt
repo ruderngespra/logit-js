@@ -1,7 +1,0 @@
-
-Wie sollen rows als solche identifiziert werden? Es geht NICHT so wie
-ich es bisher mache, nämlich einfach mit \n
-
-was aber vielleicht stattdessen geht, sind die schönen semikolons, die
-ich per prettier in den text hineinschreiben lasse.
-
