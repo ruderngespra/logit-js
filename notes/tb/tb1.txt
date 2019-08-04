@@ -1,0 +1,8 @@
+
+Der nächste Schritt muss sein, meine String Manipulation so weit zu
+treiben, das ein erster simpler Console Log stattfindet.
+
+Nebenbei gilt es, all die Konzepte aus dem Babel-Handbook genauer zu
+verstehen und durchaus weiter hierin zu lesen.
+
+---
