@@ -10,4 +10,122 @@ ASTs are not scary.
 
 In diesem Vortrag passiert wirklich genau das, was ich will.
 
+---
 
+babylon7 ist laut dem vortag gegenwärtig der standard.
+
+der ast explorer kann sogar schon live demo mäßig code übersetzten,
+komplett, nicht bloß bis zum ast.
+
+---
+
+visitor pattern:
+
+Welches Problem wird durch die Visitor-Konstruktion gelöst?
+--> Ohne Visitors müsste man manuell durch das gigantisch große
+AST-Objekt durchlaufen.
+
+Man müsste Visitor also sonst einfach selbst bauen, was nervig wäre,
+und mit Visitorn kann man einfach sehr explizit sagen, WELCHE
+Bestandteile des AST überhaupt nur besucht werden sollen.
+
+(Und diese Liste werde ich natürlich sehr ausführlich ausarbeiten
+müssen.)
+
+- Im Fall des Videos: Nach Identifiers suchen, die den namen console
+  haben.
+
+hm.
+
+KLassischerweise läuft es so, dass man als erstes den Node mit
+javascript Code sauberer in den Blick nimmt, also conditionals an ihm
+testet etc., und NUR WENN ES DER NODE IST DEN WIR SUCHEN wird
+weitergearbeitet.
+
+nodes haben immer parents.
+
+und dinge, die man zum beispiel testen kann:
+
+node.name
+
+node.parent.type
+
+node.parent.name ...
+
+und und und.
+
+sehr geil dann eine erste helper funktion, die er geschrieben hat:
+looksLike
+
+Die dann sagt, sieht a wie b aus?
+
+etc.
+
+so eine looksLike Funktion könnte ich definitiv auch gebrauchen!
+
+man kann keine packages in ast export nutzen.
+
+---
+
+Und das Plugin-Beispiel kann ich eigentlich direkt mitschreiben.
+
+--> Console logs verschönern.
+
+--- Babel-Plugin grundsätzlich:
+
+Man exportiert eine Funktion die babel als Parameter annimmt.
+
+Was man aus dieser Funktion wiederum returnt ist ein Objekt, mit etwas
+metadata wie name, und dann darin ein visitor objekt
+
+---
+
+console logs sind sog. call expressions
+
+ich werde also call expressions erstellen müssen.
+
+---
+
+Wenn man eine call expression sucht, dann übergibt man im Visitor
+dieser CallExpression-Funktion noch einen Parameter namens "path", und
+was ist jetzt dieser path:
+
+path ist hilfreich, weil es erlaubt, manipulationen des asts
+vorzunehmen an der stelle, an der diese call expression entdeckt
+wurde.
+
+--- console call ---- an sich:
+
+- Es ist eine callExpression.
+
+- Es hat einen callee, der wiederum eine sog. MemberExpression ist.
+
+- Diese hat ein Objekt namens console
+
+---
+
+Und okay, der eine Schritt ist dann diese liste, der nächste Schritt
+ist dann die manipulation. Also das tatsächliche umschreiben etc.
+
+Also, und dann der eigentliche Schritt des Node-Bauens:
+
+Immer mit t. das heißt mit dem per convention auf t runtergebrochenen
+babel.types.
+
+sei
+
+"Manipulating an ast is just like manipulating a regular javascript
+object."
+
+nodes zu bauen ist angeblich recht anstrengend manchmal, und deshalb
+gibt es noch das babel template.
+
+(Gedanke: Es wird im wesentlichen darauf hinauslaufen, eine Funktion
+zu schreiben, die diese console nodes baut.)
+
+template ist tatsächlich dafür da, node templates zu schreiben.
+
+Das werde ich wohl durchaus auch nutzen müssen.
+
+es gibt in der kombi eine replaceWith Methode, die auf paths
+aufgerufen werden kann. Sicher gibt es auch eine append Methode oder Ähnliches.

@@ -113,3 +113,33 @@ Sehr geil siehe mein test4
 Und da man generate sogar simple Optionen übergeben kann, habe ich
 allein mit diesem Spaß vermutlich das Semikolonproblem vom Wochenende
 locker gelöst!!
+
+---
+
+Also, es gibt weiterhin verschiedene Eigenschaften dieser nodes, etwa
+type oder name, die ich loggen kann. Mit Hilfe dieser Logs kann ich
+dann wiederum debuggen.
+
+Und es gibt eben bestimmte Arten von Nodes, die besucht werden können,
+etwa binary expressions, Identifier etc.
+
+"A Path is an object representation of the link between two nodes."
+
+---
+
+Es scheint so auszusehen, als bräuchte ich für das generieren von code
+aus ASTs trotz allem noch irgendeinen Originalcode.
+
+hm.
+
+AssignExpression ist jede Expression, die irgendeinen Wert zuschreibt.
+
+Um Nodes zu bauen, brauche ich die BUILDER Methode aus babel-types.
+
+"The method name for a builder is simply the name of the node type you
+want to build except with the first letter lowercased."
+
+Um Nodes zu bauen, sollte man sich die Art und Weise, wie NODE
+DEFINITIONS aussehen, genau angucken.
+
+
