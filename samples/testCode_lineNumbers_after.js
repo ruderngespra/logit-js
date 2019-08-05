@@ -1,19 +1,19 @@
 function test() {
     var hello = 3;
 }
-function test() {
+function test2() {
     var hello = 3;
 }
-function test() {
+function test3() {
     var hello = 3;
     console.log('hello: ', hello);
 }
-function test() {
+function test4() {
     var hello = 3;
 }
-function test() {
+function test5() {
     var hello = 3;
 }
-function test() {
+function test6() {
     var hello = 3;
 }
