@@ -3,6 +3,7 @@ function test() {
 }
 function test2() {
     var hello = 3;
+    console.log('hello: ', hello);
 }
 function test3() {
     var hello = 3;

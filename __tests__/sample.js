@@ -39,14 +39,14 @@ test('transformString without extra options adds basic console logs', () => {
     });
 });
 
-// test('simpleArrowDestructuring and logging', () => {
-//     expect(
-//         transformString(testStrings['simpleArrowDestructuring'].before)
-//     ).toEqual({
-//         success: true,
-//         code: testStrings['simpleArrowDestructuring'].after,
-//     });
-// });
+xtest('simpleArrowDestructuring and logging', () => {
+    expect(
+        transformString(testStrings['simpleArrowDestructuring'].before)
+    ).toEqual({
+        success: true,
+        code: testStrings['simpleArrowDestructuring'].after,
+    });
+});
 
 // test('noSemicolons and logging', () => {
 //     expect(transformString(testStrings['noSemicolons'].before)).toEqual({
@@ -55,12 +55,12 @@ test('transformString without extra options adds basic console logs', () => {
 //     });
 // });
 
-// test('transformString without extra options adds basic console logs more complicated', () => {
-//     expect(transformString(testStrings['2'].before)).toEqual({
-//         success: true,
-//         code: testStrings['2'].after,
-//     });
-// });
+test('transformString without extra options adds basic console logs more complicated', () => {
+    expect(transformString(testStrings['2'].before)).toEqual({
+        success: true,
+        code: testStrings['2'].after,
+    });
+});
 
 // test('transformString without extra options adds basic console logs with promises and destructuring of arrow functions', () => {
 //     expect(transformString(testStrings['promises1'].before)).toEqual({
