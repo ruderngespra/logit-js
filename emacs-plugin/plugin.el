@@ -1,0 +1,12 @@
+(defun logit ()
+  "Run logit for region in current buffer"
+  (interactive)
+  (let (start-pos end-pos start-line end-line command)
+    (setq start-pos (region-beginning))
+    (setq end-pos (region-end))
+    (setq end-line (line-number-at-pos))
+    (goto-char start-pos)
+    (setq start-line (line-number-at-pos))
+    (erase-buffer)
+    (insert (shell-command-to-string (concat "logit --start " (number-to-string start-line) " --end " (number-to-string end-line) " --stdout " (buffer-file-name)))
+    )))
