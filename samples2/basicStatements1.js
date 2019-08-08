@@ -5,8 +5,8 @@ function timesTwo(num) {
 }
 let doubleX = timesTwo(x);
 
-x = x > 20 && 12;
+hello = x > 20 && 12;
 
-// let testObject = { hello: 23, goodbey: 'sdfasfd' };
+let testObject = { hello: 23, goodbey: 'sdfasfd' };
 
-// let { hello: hey, goodbye } = testObject;
+let { hello: hey, goodbye } = testObject;
