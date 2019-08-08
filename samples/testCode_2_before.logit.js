@@ -1,10 +1,6 @@
-(function() {
-    var x;
-    var doubleX;
-    x = 23;
-    function timesTwo(num) {
-        return num * 2;
-    }
-    doubleX = timesTwo(x);
-    var numbers;
-})();
+const testObject = { hello: 23 };
+console.log('testObject: ', testObject);
+const { hello: hey } = testObject;
+console.log('hey: ', hey);
+var sdfsdf = 34;
+console.log('sdfsdf: ', sdfsdf);
