@@ -1,12 +1,14 @@
 var x = 5;
 console.log('x: ', x);
 x = 23;
+console.log('x: ', x);
 function timesTwo(num) {
     return num * 2;
 }
 let doubleX = timesTwo(x);
 console.log('doubleX: ', doubleX);
 hello = x > 20 && 12;
+console.log('hello: ', hello);
 let testObject = { hello: 23, goodbey: 'sdfasfd' };
 console.log('testObject: ', testObject);
 let { hello: hey, goodbye } = testObject;
