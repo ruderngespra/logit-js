@@ -1,6 +1,6 @@
 {
     "name": "logit-js",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "lightweight command line debug utility",
     "main": "index.js",
     "bin": {
@@ -20,7 +20,7 @@
     "author": "ruderngespra",
     "license": "ISC",
     "bugs": {
-        "url":"https://github.com/ruderngespra/logit-js/issues"
+        "url": "https://github.com/ruderngespra/logit-js/issues"
     },
     "dependencies": {
         "@babel/generator": "^7.5.5",
