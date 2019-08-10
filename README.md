@@ -1,4 +1,4 @@
 # logit-js
-lightweight command line debug utility
+Lightweight command line debug utility.
 
-Actively developed. Stable version is not yet available.
+Actively developed. Stable version not yet available.
