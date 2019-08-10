@@ -1,3 +1,6 @@
-const [sdf, sdffas] = testArray;
-console.log('sdffas: ', sdffas);
-console.log('sdf: ', sdf);
+const test = af => {
+    1 + 1;
+};
+
+console.log('test: ', test);
+console.log('test: ', test);

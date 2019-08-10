@@ -1,1 +1,3 @@
-const [sdf, sdffas] = testArray;
+const test = af => {
+    1 + 1;
+};
