@@ -23,10 +23,9 @@
         "url": "https://github.com/ruderngespra/logit-js/issues"
     },
     "dependencies": {
-        "@babel/generator": "^7.5.5",
         "@babel/core": "^7.5.5",
-        "babel-generator": "^6.26.1",
-        "babel-traverse": "^6.26.0",
+        "@babel/generator": "^7.5.5",
+        "@babel/template": "^7.4.4",
         "babylon": "^6.18.0",
         "chalk": "^2.4.2",
         "command-line-args": "^5.1.1",

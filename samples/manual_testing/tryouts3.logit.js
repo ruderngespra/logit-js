@@ -1,6 +1,4 @@
-const test = af => {
-    1 + 1;
+hel => {
+    console.log('hel: ', hel);
+    return myModule;
 };
-
-console.log('test: ', test);
-console.log('test: ', test);
