@@ -2,7 +2,7 @@ function test() {
     var hello = 3;
 }
 
-function test2() {
+function test2(hey, ho, he) {
     var hello = 3;
 }
 
