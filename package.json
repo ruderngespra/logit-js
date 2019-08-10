@@ -1,31 +1,39 @@
 {
-  "name": "logit-js",
-  "version": "0.1.0",
-  "description": "lightweight command line debug utility",
-  "main": "index.js",
-  "bin": {
-    "logit": "bin/logit.js"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "ruderngespra",
-  "license": "ISC",
-  "private": true,
-  "dependencies": {
-    "@babel/generator": "^7.5.5",
-    "babel-generator": "^6.26.1",
-    "babel-traverse": "^6.26.0",
-    "babylon": "^6.18.0",
-    "chalk": "^2.4.2",
-    "command-line-args": "^5.1.1",
-    "command-line-usage": "^6.0.2",
-    "prettier": "^1.18.2"
-  },
-  "devDependencies": {
-    "jest": "^24.8.0"
-  }
+    "name": "logit-js",
+    "version": "0.1.1",
+    "description": "lightweight command line debug utility",
+    "main": "index.js",
+    "bin": {
+        "logit": "bin/logit.js"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ruderngespra/logit-js"
+    },
+    "keywords": [],
+    "author": "ruderngespra",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ruderngespra/logit-js/issues"
+    },
+    "dependencies": {
+        "@babel/generator": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "babel-generator": "^6.26.1",
+        "babel-traverse": "^6.26.0",
+        "babylon": "^6.18.0",
+        "chalk": "^2.4.2",
+        "command-line-args": "^5.1.1",
+        "command-line-usage": "^6.0.2",
+        "prettier": "^1.18.2"
+    },
+    "devDependencies": {
+        "jest": "^24.8.0"
+    }
 }
