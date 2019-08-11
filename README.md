@@ -1,5 +1,4 @@
 # logit-js
-Lightweight debug utility.
 
 Logit-js writes informative console logs into javascript files. It can
 be integrated into an editor or used as a command line tool.
