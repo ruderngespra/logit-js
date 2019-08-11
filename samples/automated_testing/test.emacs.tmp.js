@@ -17,17 +17,4 @@ if (hello >= 4) {
 
 bar++;
 
-(hello, he, ho, ha) => {
-    return hello;
-};
-
-bye => bye;
-
-he => {
-    return he;
-};
-
-heww => {
-    console.log('heww :', heww);
-    return heww;
-};
+hello => hello;
