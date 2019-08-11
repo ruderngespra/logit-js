@@ -1,6 +1,6 @@
 {
     "name": "logit-js",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "lightweight command line debug utility",
     "main": "index.js",
     "bin": {
