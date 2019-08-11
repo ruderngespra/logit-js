@@ -4,8 +4,6 @@ Lightweight debug utility.
 Logit-js writes informative console logs into javascript files. It can
 be integrated into an editor or used as a command line tool.
 
-Actively developed! Stable version not yet available.
-
 ### Input
 
 ```js
@@ -66,23 +64,8 @@ console.log('hello :', hello);
 
 ### Example Usage Editor
 
-![Example Usage Editor](samples/readme/logit_emacs.gif)
+![Example Usage Editor](samples/readme/logit3.gif)fLyMd-mAkEr
 
-### Example Usage Command Line
-
-![Example Usage Command Line](samples/readme/logit_cli.gif)
+Actively developed! Stable version not yet available.
 
 
-### Install
-
-Logit is available as an npm package.
-
-It needs to be installed globally in order to be able to use the
-command line:
-
-```
-$ npm install --global logit-js
-```
-
-### Editor Plugins
-- [Emacs](emacs-plugin/plugin.el)

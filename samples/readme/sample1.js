@@ -1,6 +1,6 @@
-const { hello, world } = { hello: 1, world: 2 };
+let { hello, world } = { hello: 1, world: 2 };
 
-bar = 34;
+hello = 34;
 
 function foo(varName1, varName2, varName3) {
     let newVar = varName1 * 2;
@@ -8,11 +8,11 @@ function foo(varName1, varName2, varName3) {
 
 if (hello >= 4) {
     foo();
-    foo = bar;
+    hello = world;
 } else if (hello == 4) {
     foo();
 } else {
     foo();
 }
 
-bar++;
+hello++;
