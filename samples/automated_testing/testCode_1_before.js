@@ -12,22 +12,19 @@ app.listen(8080, () => {
 
 function test() {
     var hello = 3;
+    hello++;
 }
 
 function test2(hey, ho, he) {
-    console.log('he :', he);
-    console.log('ho :', ho);
-    console.log('hey :', hey);
-    var hello = 3;
-    console.log('hello :', hello);
+    hello = he + ho;
 }
 
 function test3() {
     var hello = 3;
-}
-
-function test4() {
-    var hello = 3;
+    function test4() {
+        var hello = 3;
+    }
+    hello++;
 }
 
 const gree = (heyse, eh, ehh) => heyse;
