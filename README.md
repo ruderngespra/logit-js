@@ -5,6 +5,13 @@ be integrated into an editor or used as a command line tool.
 
 Actively developed! Stable version not yet available.
 
+### Current features
+
+- variable logs after basic variable declarations and variable declarations using es6 destructuring
+- variable logs after assignment expressions and update expressions
+- variable logs of parameter values inside normal functions and arrow functions
+- informative logs inside if statements
+
 ### Input
 
 ```js
@@ -86,9 +93,3 @@ $ npm install --global logit-js
 ### Editor Plugins
 - [Emacs](emacs-plugin/plugin.el)
 
-### Current features
-
-- variable logs after basic variable declarations and variable declarations using es6 destructuring
-- variable logs after assignment expressions and update expressions
-- variable logs of parameter values inside normal functions and arrow functions
-- informative logs inside if statements
