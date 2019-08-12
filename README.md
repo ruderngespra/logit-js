@@ -11,6 +11,7 @@ Actively developed! Stable version not yet available.
 - variable logs after assignment expressions and update expressions
 - variable logs of parameter values inside normal functions and arrow functions
 - informative logs inside if statements
+- adds line and column number by default
 
 ### Input
 

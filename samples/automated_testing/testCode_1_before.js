@@ -27,9 +27,8 @@ he => {
     return he;
 };
 
-console.log('hey');
-
 heww => {
-    console.log('heww :', heww);
     return heww;
 };
+
+bar = 32423;
