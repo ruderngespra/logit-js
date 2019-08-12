@@ -6,6 +6,10 @@ function foo(varName1, varName2, varName3) {
     let newVar = varName1 * 2;
 }
 
+const bar = (varName1, varName2, varName3) => {
+    let newVar = varName1 * 2;
+};
+
 if (hello >= 4) {
     foo();
     foo = bar;

@@ -10,7 +10,7 @@
     (goto-char end-pos)
     (setq end-line (line-number-at-pos))
     (erase-buffer)
-    (insert (shell-command-to-string (concat "logit --start " (number-to-string start-line) " --end " (number-to-string end-line) " --stdout logit.tmp.js")))
+    (insert (shell-command-to-string (concat "logit --start " (number-to-string start-line) " --end " (number-to-string end-line) " --stdout --functionName logit.tmp.js")))
     (delete-file "logit.tmp.js")
     (goto-char start-pos)
     ))

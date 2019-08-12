@@ -10,16 +10,21 @@ function foo(varName1, varName2, varName3) {
     console.log('10:4 ', 'newVar :', newVar);
 }
 
+const bar = (varName1, varName2, varName3) => {
+    console.log('14:4 ', 'varName3 :', varName3);
+    console.log('15:4 ', 'varName2 :', varName2);
+    console.log('16:4 ', 'varName1 :', varName1);
+    let newVar = varName1 * 2;
+    console.log('18:4 ', 'newVar :', newVar);
+};
+console.log('20:0 ', 'bar :', bar);
+
 if (hello >= 4) {
-    console.log('14:4 ', 'In IfStatement (hello >= 4)');
     foo();
     foo = bar;
-    console.log('17:4 ', 'foo :', foo);
 } else if (hello == 4) {
-    console.log('19:4 ', 'In IfStatement (hello == 4)');
     foo();
 } else {
-    console.log('22:4 ', 'In ElseStatement.');
     foo();
 }
 
