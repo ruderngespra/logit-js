@@ -99,4 +99,4 @@ $ npm install --global logit-js
 
 ### Editor Plugins
 - [Emacs](emacs-plugin/plugin.el)
-
+- [Visual Studio Code](vscode-plugin/logit)
