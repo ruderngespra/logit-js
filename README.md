@@ -11,8 +11,9 @@ Actively developed! Stable version not yet available.
 - variable logs after assignment expressions and update expressions
 - variable logs of parameter values inside normal functions and arrow functions
 - adds line and column number by default
-- option `--verbose` prints function names, typeof info and informative logs inside if statements
-
+- option `--verbose` prints function names, typeof info and
+  informative logs inside if statements in region
+- option `--remove` deletes all console logs in region
 
 ### Input
 
