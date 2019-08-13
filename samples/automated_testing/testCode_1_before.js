@@ -1,6 +1,13 @@
-const { hello, world } = { hello: 1, world: 2 };
+const { hello, world } = {
+    hello: 1,
+    world: 2,
+};
+
+console.log('5:0', 'world :', world);
+console.log('6:0', 'hello :', hello);
 
 bar = 34;
+console.log('9:0', 'bar :', bar);
 
 function foo(varName1) {
     // let newVar = varName1 * 2;

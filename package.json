@@ -16,7 +16,14 @@
         "type": "git",
         "url": "https://github.com/ruderngespra/logit-js"
     },
-    "keywords": ["javascript", "console", "log", "debug", "debugger", "babel-plugin"],
+    "keywords": [
+        "javascript",
+        "console",
+        "log",
+        "debug",
+        "debugger",
+        "babel-plugin"
+    ],
     "author": "ruderngespra",
     "license": "ISC",
     "bugs": {
