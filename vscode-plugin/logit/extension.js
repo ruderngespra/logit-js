@@ -43,6 +43,10 @@ function activate(context) {
                 editor.edit(function(editBuilder) {
                     editBuilder.replace(textRange, formattedCode);
                 });
+                const position = editor.selection.active;
+                var newPosition = position.with(start, 0);
+                var newSelection = new vscode.Selection(newPosition, newPosition);
+                editor.selection = newSelection;
             }
 
             // The code you place here will be executed every time your command is executed
