@@ -17,8 +17,17 @@
 		"commands": [
 			{
 				"command": "extension.logit",
-				"title": "Logit"
+				"title": "logit"
+			},
+			{
+				"command": "extension.logit-verbose",
+				"title": "logit-verbose"
+			},
+			{
+				"command": "extension.logit-remove",
+				"title": "logit-remove"
 			}
+
 		]
 	},
 	"scripts": {

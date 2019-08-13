@@ -73,9 +73,13 @@ hello++;
 console.log('hello :', hello);
 ```
 
-### Example Usage Editor
+### Example Usage Visual Studio Code
 
-![Example Usage Editor](samples/readme/logit_emacs.gif)
+![Example Usage Visual Studio Code](samples/readme/vscode1.gif)
+
+### Example Usage Emacs
+
+![Example Usage Emacs](samples/readme/emacs2.gif)
 
 ### Example Usage Command Line
 

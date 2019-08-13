@@ -16,47 +16,80 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "logit" is now active!');
 
+    const defaultAction = function(options) {
+        const editor = vscode.window.activeTextEditor;
+        if (editor) {
+            let document = editor.document;
+            const code = document.getText();
+            const start = editor.selection.start.line;
+            const end = editor.selection.end.line;
+            let formattedCode;
+            if (options.verbose) {
+                formattedCode = transformString(code, {
+                    start,
+                    end,
+                    verbose: true,
+                }).code;
+            } else if (options.remove) {
+                formattedCode = transformString(code, {
+                    start,
+                    end,
+                    remove: true,
+                }).code;
+            } else {
+                formattedCode = transformString(code, {
+                    start,
+                    end,
+                }).code;
+            }
+            const firstLine = editor.document.lineAt(0);
+            const lastLine = editor.document.lineAt(
+                editor.document.lineCount - 1
+            );
+            const textRange = new vscode.Range(
+                0,
+                firstLine.range.start.character,
+                editor.document.lineCount - 1,
+                lastLine.range.end.character
+            );
+            editor.edit(function(editBuilder) {
+                editBuilder.replace(textRange, formattedCode);
+            });
+            const position = editor.selection.active;
+            var newPosition = position.with(start, 0);
+            var newSelection = new vscode.Selection(newPosition, newPosition);
+            editor.selection = newSelection;
+        }
+
+        // The code you place here will be executed every time your command is executed
+        // Display a message box to the user
+        // vscode.window.showInformationMessage('Hello World!');
+        // const transformedCode = transformString(code, {start, end})
+    };
+
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand(
-        'extension.logit',
-        function() {
-            const editor = vscode.window.activeTextEditor;
-            if (editor) {
-                let document = editor.document;
-                const code = document.getText();
-                const start = editor.selection.start.line;
-                const end = editor.selection.end.line;
-                const formattedCode = transformString(code, { start, end })
-                    .code;
-                const firstLine = editor.document.lineAt(0);
-                const lastLine = editor.document.lineAt(
-                    editor.document.lineCount - 1
-                );
-                const textRange = new vscode.Range(
-                    0,
-                    firstLine.range.start.character,
-                    editor.document.lineCount - 1,
-                    lastLine.range.end.character
-                );
-                editor.edit(function(editBuilder) {
-                    editBuilder.replace(textRange, formattedCode);
-                });
-                const position = editor.selection.active;
-                var newPosition = position.with(start, 0);
-                var newSelection = new vscode.Selection(newPosition, newPosition);
-                editor.selection = newSelection;
-            }
 
-            // The code you place here will be executed every time your command is executed
-            // Display a message box to the user
-            // vscode.window.showInformationMessage('Hello World!');
-            // const transformedCode = transformString(code, {start, end})
-        }
-    );
+    let disposable = vscode.commands.registerCommand('extension.logit', () => {
+        defaultAction({});
+    });
 
     context.subscriptions.push(disposable);
+
+    let disposable2 = vscode.commands.registerCommand(
+        'extension.logit-verbose',
+        () => defaultAction({ verbose: true })
+    );
+
+    context.subscriptions.push(disposable2);
+
+    let disposable3 = vscode.commands.registerCommand(
+        'extension.logit-remove',
+        () => defaultAction({ remove: true })
+    );
+
+    context.subscriptions.push(disposable3);
 }
 exports.activate = activate;
 
