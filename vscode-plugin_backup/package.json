@@ -1,7 +1,7 @@
 {
 	"name": "logit",
 	"displayName": "logit",
-	"description": "Logit-js writes informative console logs into javascript files.",
+	"description": "",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.37.0"
@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "extension.logit",
-				"title": "Logit"
+				"title": "logit"
 			}
 		]
 	},
