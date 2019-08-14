@@ -34,7 +34,7 @@ const testStrings = require('./../samples/automated_testing/provideTestStrings.j
 
 test('transformString universal verbose1', () => {
     expect(
-        transformString(testStrings['verbose1'].before, { verbose: true })
+        transformString(testStrings['normal1'].before, { verbose: true })
     ).toEqual({
         success: true,
         code: testStrings['verbose1'].after,
@@ -42,9 +42,7 @@ test('transformString universal verbose1', () => {
 });
 
 test('transformString universal normal1', () => {
-    expect(
-        transformString(testStrings['normal1'].before, { verbose: true })
-    ).toEqual({
+    expect(transformString(testStrings['normal1'].before)).toEqual({
         success: true,
         code: testStrings['normal1'].after,
     });
