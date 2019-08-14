@@ -3,11 +3,10 @@ const { hello, world } = {
     world: 2,
 };
 
-console.log('5:0', 'world :', world);
-console.log('6:0', 'hello :', hello);
-
 bar = 34;
-console.log('9:0', 'bar :', bar);
+
+const test = {};
+test.hey.ho = 4;
 
 function foo(varName1) {
     // let newVar = varName1 * 2;
