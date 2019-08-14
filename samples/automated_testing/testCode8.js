@@ -1,3 +1,1 @@
-function getCompleteObjectPropertyName(hello = 4, { hey: what }, so) {
-    const test = 4;
-}
+const test = 4;

@@ -7,46 +7,55 @@ const testStrings = require('./../samples/automated_testing/provideTestStrings.j
 //     expect(2 + 2).toBe(4);
 // });
 
-test('transformString returns error if and only if input is no string', () => {
-    let test = transformString([]);
-    expect(test).toEqual(
-        expect.objectContaining({ success: false, error: 'Invalid input type' })
-    );
-    test = transformString({ hello: 'world' });
-    expect(test).toEqual(
-        expect.objectContaining({ success: false, error: 'Invalid input type' })
-    );
-    test = transformString(234);
-    expect(test).toEqual(
-        expect.objectContaining({ success: false, error: 'Invalid input type' })
-    );
-    test = transformString(true);
-    expect(test).toEqual(
-        expect.objectContaining({ success: false, error: 'Invalid input type' })
-    );
-    test = transformString('testString');
-    expect(test).toEqual(
-        expect.not.objectContaining({
-            error: 'Invalid input type',
-        })
-    );
-});
+// test('transformString returns error if and only if input is no string', () => {
+//     let test = transformString([]);
+//     expect(test).toEqual(
+//         expect.objectContaining({ success: false, error: 'Invalid input type' })
+//     );
+//     test = transformString({ hello: 'world' });
+//     expect(test).toEqual(
+//         expect.objectContaining({ success: false, error: 'Invalid input type' })
+//     );
+//     test = transformString(234);
+//     expect(test).toEqual(
+//         expect.objectContaining({ success: false, error: 'Invalid input type' })
+//     );
+//     test = transformString(true);
+//     expect(test).toEqual(
+//         expect.objectContaining({ success: false, error: 'Invalid input type' })
+//     );
+//     test = transformString('testString');
+//     expect(test).toEqual(
+//         expect.not.objectContaining({
+//             error: 'Invalid input type',
+//         })
+//     );
+// });
 
-test('transformString without extra options adds basic console logs', () => {
-    expect(transformString(testStrings['1'].before)).toEqual({
-        success: true,
-        code: testStrings['1'].after,
-    });
-});
-
-xtest('simpleArrowDestructuring and logging', () => {
+test('transformString universal', () => {
     expect(
-        transformString(testStrings['simpleArrowDestructuring'].before)
+        transformString(testStrings['tmp'].before, { verbose: true })
     ).toEqual({
         success: true,
-        code: testStrings['simpleArrowDestructuring'].after,
+        code: testStrings['tmp'].after,
     });
 });
+
+// test('transformString without extra options adds basic console logs', () => {
+//     expect(transformString(testStrings['1'].before)).toEqual({
+//         success: true,
+//         code: testStrings['1'].after,
+//     });
+// });
+
+// xtest('simpleArrowDestructuring and logging', () => {
+//     expect(
+//         transformString(testStrings['simpleArrowDestructuring'].before)
+//     ).toEqual({
+//         success: true,
+//         code: testStrings['simpleArrowDestructuring'].after,
+//     });
+// });
 
 // test('noSemicolons and logging', () => {
 //     expect(transformString(testStrings['noSemicolons'].before)).toEqual({
@@ -55,12 +64,12 @@ xtest('simpleArrowDestructuring and logging', () => {
 //     });
 // });
 
-test('transformString without extra options adds basic console logs more complicated', () => {
-    expect(transformString(testStrings['2'].before)).toEqual({
-        success: true,
-        code: testStrings['2'].after,
-    });
-});
+// test('transformString without extra options adds basic console logs more complicated', () => {
+//     expect(transformString(testStrings['2'].before)).toEqual({
+//         success: true,
+//         code: testStrings['2'].after,
+//     });
+// });
 
 // test('transformString without extra options adds basic console logs with promises and destructuring of arrow functions', () => {
 //     expect(transformString(testStrings['promises1'].before)).toEqual({
