@@ -32,12 +32,21 @@ const testStrings = require('./../samples/automated_testing/provideTestStrings.j
 //     );
 // });
 
-test('transformString universal', () => {
+test('transformString universal verbose1', () => {
     expect(
-        transformString(testStrings['tmp'].before, { verbose: true })
+        transformString(testStrings['verbose1'].before, { verbose: true })
     ).toEqual({
         success: true,
-        code: testStrings['tmp'].after,
+        code: testStrings['verbose1'].after,
+    });
+});
+
+test('transformString universal normal1', () => {
+    expect(
+        transformString(testStrings['normal1'].before, { verbose: true })
+    ).toEqual({
+        success: true,
+        code: testStrings['normal1'].after,
     });
 });
 
