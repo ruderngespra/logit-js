@@ -1,4 +1,3 @@
-varName: foo;
 const { hello, world } = { hello: 1, world: 2 };
 
 bar = 34;
