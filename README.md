@@ -142,6 +142,13 @@ $ npm install --global logit-js
 - [Emacs](emacs-plugin/plugin.el)
 - [Visual Studio Code](vscode-plugin/logit)
 
+### Known Issues
+- variables that are assigned return values of update expressions may produce an
+  infinite loop
+
 ### Wishlist
 - Atom Plugin
 - Informative Console Logs within Try and Catch scopes
+
+### Contributions
+Contributions are very much welcome.

@@ -36,7 +36,7 @@ test('transformString simpleStructures normal1', () => {
     });
 });
 
-xtest('transformString remove from verbose', () => {
+test('transformString remove from verbose', () => {
     expect(transformString(testStrings['simpleStructuresVerbose'].after, { remove: true })).toEqual({
         success: true,
         code: testStrings['simpleStructures'].before,
