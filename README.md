@@ -3,7 +3,7 @@
 Logit-js writes informative console logs into javascript files. It can
 be integrated into an editor or used as a command line tool.
 
-Actively developed! Stable version not yet available.
+Actively developed. Stable version not yet available.
 
 ### Current features
 
@@ -129,7 +129,7 @@ hello => {
 
 ### Install
 
-Logit is available as an npm package.
+Logit is available as an npm package:
 
 ```
 $ npm install logit-js
