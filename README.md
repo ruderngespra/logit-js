@@ -141,3 +141,7 @@ $ npm install --global logit-js
 ### Editor Plugins
 - [Emacs](emacs-plugin/plugin.el)
 - [Visual Studio Code](vscode-plugin/logit)
+
+### Wishlist
+- Atom Plugin
+- Informative Console Logs within Try and Catch scopes
