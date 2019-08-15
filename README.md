@@ -145,6 +145,7 @@ $ npm install --global logit-js
 ### Known Issues
 - variables that are assigned return values of update expressions may produce an
   infinite loop
+- option `--remove` does not yet work stable in vscode
 
 ### Wishlist
 - Atom Plugin
