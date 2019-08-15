@@ -152,8 +152,8 @@ $ npm install --global logit-js
 - option `--remove` does not yet work stable in vscode
 
 ### Wishlist
-- Atom Plugin
-- Informative Console Logs within Try and Catch scopes
+- atom plugin
+- informative console logs within try and catch scopes
 
 ### Contributions
 Contributions are very much welcome.
