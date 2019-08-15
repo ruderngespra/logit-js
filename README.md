@@ -123,13 +123,17 @@ hello => {
 
 ![Example Usage Emacs](samples/readme/emacs2.gif)
 
-<!-- ### Example Usage Command Line -->
+### Command Line Options
 
-<!-- ![Example Usage Command Line](samples/readme/logit_cli.gif) -->
+![Example Usage Command Line](samples/readme/command_line.png)
 
 ### Install
 
 Logit is available as an npm package.
+
+```
+$ npm install logit-js
+```
 
 It needs to be installed globally in order to be able to use the
 command line:
