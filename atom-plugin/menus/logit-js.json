@@ -1,0 +1,43 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "logit-js",
+        "submenu": [
+          {
+            "label": "logit",
+            "command": "logit-js:logit"
+          }, {
+            "label": "logit-verbose",
+            "command": "logit-js:logitVerbose"
+          }, {
+            "label": "logit-remove",
+            "command": "logit-js:logitRemove"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "logit-js",
+          "submenu": [
+            {
+              "label": "logit",
+              "command": "logit-js:logit"
+            }, {
+              "label": "logit-verbose",
+              "command": "logit-js:logitVerbose"
+            }, {
+              "label": "logit-remove",
+              "command": "logit-js:logitRemove"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
