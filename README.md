@@ -145,15 +145,11 @@ $ npm install --global logit-js
 ### Editor Plugins
 - [Emacs](emacs-plugin/plugin.el)
 - [Visual Studio Code](vscode-plugin/logit)
+- [Atom](atom-plugin/logit) Contribution by [@thomsound](https://github.com/thomsound/)
 
 ### Known Issues
-- variables that are assigned return values of update expressions may produce an
+- variables that are assigned return values of update expressions may produce an error and
   infinite loop
-- option `--remove` does not yet work stable in vscode
-
-### Wishlist
-- atom plugin
-- informative console logs within try and catch scopes
 
 ### Contributions
 Contributions are very much welcome.
