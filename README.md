@@ -150,6 +150,10 @@ $ npm install --global logit-js
 ### Known Issues
 - variables that are assigned return values of update expressions may produce an error and
   infinite loop
+  
+### Wishlist
+- Informative console logs inside try and catch scopes
+- Option to set customized prettier settings instead of provided default
 
 ### Contributions
 Contributions are very much welcome.
