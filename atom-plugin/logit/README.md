@@ -1,5 +1,9 @@
-# logit-js package
+### Logit-Implementation for Atom
 
-A short description of your package.
+#### Install
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Please notice that this plugin is not yet stable. If you still want to try it out you can do so by doing the following:
+
+1. Download this folder.
+2. Cd into the the folder and run `apm install` and `apm link`.
+4. Restart Atom.
