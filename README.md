@@ -154,8 +154,8 @@ $ npm install --global logit-js
   infinite loop
   
 ### Wishlist
-- Informative console logs inside try and catch scopes
-- Option to set customized prettier settings instead of provided default
+- informative console logs inside try and catch scopes
+- option to set customized prettier settings instead of provided default
 
 ### Contributions
 Contributions are very much welcome.
