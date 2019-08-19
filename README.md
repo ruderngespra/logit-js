@@ -1,7 +1,9 @@
 # logit-js
 
 Logit-js writes informative console logs into javascript files. It can
-be integrated into an editor or used as a command line tool.
+be used as a command line tool or integrated into an editor which is
+its main use case. It is built upon several small [babel](https://github.com/babel/babel) plugins in
+combination with [prettier](https://github.com/prettier/prettier) code formatting.
 
 Actively developed. Stable version not yet available.
 
@@ -165,6 +167,10 @@ logit("let test = 1;", {verbose: true});
 ### Known Issues
 - variables that are assigned return values of update expressions may produce an error and
   infinite loop
+  
+### Wishlist
+- informative console logs inside try and catch scopes
+- option to set customized prettier settings instead of provided default
 
 ### Contributions
 Contributions are very much welcome.
