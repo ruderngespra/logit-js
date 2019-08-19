@@ -1,5 +1,5 @@
 ### Logit-Implementation for Visual Studio Code
 
-[logit-0.0.2.vsix](logit-0.0.2.vsix) contains the whole extension.
+[logit-0.0.2.vsix](logit-0.0.2.vsix) contains the whole extension. It is possible to install it via the vs code extensions menu option "Install from VSIX...".
 
-For detailed install instructions see https://vscode-docs.readthedocs.io/en/stable/extensions/install-extension/.
+For further install instructions see https://vscode-docs.readthedocs.io/en/stable/extensions/install-extension/.
