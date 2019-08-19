@@ -135,15 +135,30 @@ Logit is available as an npm package:
 $ npm install logit-js
 ```
 
-It needs to be installed globally in order to be able to use the
-command line:
+In order to be able to use the command line it needs to be installed globally:
 
 ```
 $ npm install --global logit-js
 ```
 
+### API
+
+Logit takes a code string as first parameter and an optional options
+object as a second parameter.
+
+```js
+const logit = require('logit-js')
+
+logit("let test = 1;");
+// -> {code: "let test = 1;\nconsole.log('2:0', 'test :', test);\n", success: true}
+
+logit("let test = 1;", {verbose: true});
+// -> {code: "let test = 5;\nconsole.log('2:0', 'test :', test);\nconsole.log('typeof test :', typeof test);\n"", success: true}
+
+```
+
 ### Editor Plugins
-- [Emacs](emacs-plugin/plugin.el)
+- [Emacs](emacs-plugin)
 - [Visual Studio Code](vscode-plugin/logit)
 - [Atom](atom-plugin/logit) Contribution by [@thomsound](https://github.com/thomsound/)
 
