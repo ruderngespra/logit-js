@@ -1,8 +1,9 @@
 {
 	"name": "logit",
+	"publisher": "ruderngespra",
 	"displayName": "logit",
 	"description": "Logit-js writes informative console logs into javascript files.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -27,21 +28,27 @@
 				"command": "extension.logit-remove",
 				"title": "logit-remove"
 			}
-
 		]
 	},
 	"scripts": {
 		"test": "node ./test/runTest.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ruderngespra/logit-js/tree/master/vscode-plugin/logit"
+	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.7.2",
 		"@types/vscode": "^1.37.0",
-		"eslint": "^5.13.0",
+		"eslint": "^6.2.0",
 		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"vscode-test": "^1.0.2"
+		"mocha": "^6.2.0",
+		"typescript": "^3.5.3",
+		"vscode-test": "^1.2.0"
+	},
+	"dependencies": {
+		"logit-js": "^0.1.8"
 	}
 }

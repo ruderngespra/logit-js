@@ -1,0 +1,22 @@
+{
+  "name": "logit-js",
+  "main": "./logit.js",
+  "version": "0.0.1",
+  "description": "Logit-js writes informative console logs into javascript files.",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": [
+      "logit-js:logit",
+      "logit-js:logitVerbose",
+      "logit-js:logitRemove"
+    ]
+  },
+  "repository": "https://github.com/atom/logit-js/atom-plugin/logit",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "logit-js": "^0.1.8"
+  }
+}

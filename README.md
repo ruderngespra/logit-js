@@ -1,7 +1,9 @@
 # logit-js
 
 Logit-js writes informative console logs into javascript files. It can
-be integrated into an editor or used as a command line tool.
+be used as a command line tool or integrated into an editor which is
+its main use case. It is built upon several small [babel](https://github.com/babel/babel) plugins in
+combination with [prettier](https://github.com/prettier/prettier) code formatting.
 
 Actively developed. Stable version not yet available.
 
@@ -135,25 +137,40 @@ Logit is available as an npm package:
 $ npm install logit-js
 ```
 
-It needs to be installed globally in order to be able to use the
-command line:
+In order to be able to use the command line it needs to be installed globally:
 
 ```
 $ npm install --global logit-js
 ```
 
+### API
+
+Logit takes a code string as first parameter and an optional options
+object as a second parameter.
+
+```js
+const logit = require('logit-js')
+
+logit("let test = 1;");
+// -> {code: "let test = 1;\nconsole.log('2:0', 'test :', test);\n", success: true}
+
+logit("let test = 1;", {verbose: true});
+// -> {code: "let test = 5;\nconsole.log('2:0', 'test :', test);\nconsole.log('typeof test :', typeof test);\n"", success: true}
+
+```
+
 ### Editor Plugins
-- [Emacs](emacs-plugin/plugin.el)
+- [Emacs](emacs-plugin)
 - [Visual Studio Code](vscode-plugin/logit)
+- [Atom](atom-plugin/logit) Contribution by [@thomsound](https://github.com/thomsound/)
 
 ### Known Issues
-- variables that are assigned return values of update expressions may produce an
+- variables that are assigned return values of update expressions may produce an error and
   infinite loop
-- option `--remove` does not yet work stable in vscode
-
+  
 ### Wishlist
-- atom plugin
-- informative console logs within try and catch scopes
+- informative console logs inside try and catch scopes
+- option to set customized prettier settings instead of provided default
 
 ### Contributions
 Contributions are very much welcome.

@@ -9,7 +9,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 
-const transformString = require('/home/janko/it/spiced/finalProject/logit/lib/transformString.js');
+const transformString = require('logit-js');
 
 function activate(context) {
     // Use the console to output diagnostic information (console.log) and errors (console.error)
