@@ -9,6 +9,8 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 
+// Provisorisch hard link:
+// const transformString = require('../../lib/transformString.js');
 const transformString = require('logit-js');
 
 function activate(context) {
@@ -21,8 +23,9 @@ function activate(context) {
         if (editor) {
             let document = editor.document;
             const code = document.getText();
-            const start = editor.selection.start.line;
+            const start = editor.selection.start.line + 1;
             const end = editor.selection.end.line;
+            // console.log(start, end)
             let formattedCode;
             if (options.verbose) {
                 formattedCode = transformString(code, {
@@ -43,9 +46,7 @@ function activate(context) {
                 }).code;
             }
             const firstLine = editor.document.lineAt(0);
-            const lastLine = editor.document.lineAt(
-                editor.document.lineCount - 1
-            );
+            const lastLine = editor.document.lineAt(editor.document.lineCount - 1);
             const textRange = new vscode.Range(
                 0,
                 firstLine.range.start.character,
@@ -77,17 +78,13 @@ function activate(context) {
 
     context.subscriptions.push(disposable);
 
-    let disposable2 = vscode.commands.registerCommand(
-        'extension.logit-verbose',
-        () => defaultAction({ verbose: true })
+    let disposable2 = vscode.commands.registerCommand('extension.logit-verbose', () =>
+        defaultAction({ verbose: true })
     );
 
     context.subscriptions.push(disposable2);
 
-    let disposable3 = vscode.commands.registerCommand(
-        'extension.logit-remove',
-        () => defaultAction({ remove: true })
-    );
+    let disposable3 = vscode.commands.registerCommand('extension.logit-remove', () => defaultAction({ remove: true }));
 
     context.subscriptions.push(disposable3);
 }
