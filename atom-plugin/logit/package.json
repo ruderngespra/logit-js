@@ -1,7 +1,7 @@
 {
   "name": "logit-js",
   "main": "./logit.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Logit-js writes informative console logs into javascript files.",
   "keywords": [],
   "activationCommands": {
@@ -17,6 +17,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "logit-js": "^0.1.8"
+    "logit-js": "^0.1.9"
   }
 }

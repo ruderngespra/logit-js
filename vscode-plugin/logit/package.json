@@ -3,7 +3,7 @@
 	"publisher": "ruderngespra",
 	"displayName": "logit",
 	"description": "Logit-js writes informative console logs into javascript files.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -42,13 +42,13 @@
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.7.2",
 		"@types/vscode": "^1.37.0",
-		"eslint": "^6.2.0",
+		"eslint": "^6.2.1",
 		"glob": "^7.1.4",
 		"mocha": "^6.2.0",
 		"typescript": "^3.5.3",
 		"vscode-test": "^1.2.0"
 	},
 	"dependencies": {
-		"logit-js": "^0.1.8"
+		"logit-js": "^0.1.9"
 	}
 }
