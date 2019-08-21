@@ -1,6 +1,6 @@
 ### Logit-Implementation for Atom
 
-Please notice that this plugin is not yet stable. If you still want to try it out you can do so by doing the following:
+### Install
 
 1. Download [logit-atom.tar.gz](logit-atom.tar.gz).
 2. Create a new directory, cd into it and extract the package:
