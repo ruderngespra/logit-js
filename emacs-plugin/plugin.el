@@ -6,7 +6,7 @@
     (setq end-pos (region-end))
     (goto-char start-pos)
     (setq start-line (line-number-at-pos))
-    ;; (setq start-line (- start-line 1))
+   ;; (setq start-line (- start-line 1))
     (goto-char end-pos)
     (setq end-line (- (line-number-at-pos) 1))
     ;; (setq end-line (- end-line 1))

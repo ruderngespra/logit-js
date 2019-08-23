@@ -20,110 +20,122 @@ Actively developed. Stable version not yet available.
 ### Input
 
 ```js
-hello = 34;
+let bar = 'hello ';
+let foo = 'world';
+let helloWorld = bar + foo;
 
-function foo(varName1, varName2, varName3) {
-    let newVar = varName1 * 2;
-}
+const testObject = { hello: 'Hi', world: 'Earth' };
+const { hello, world } = testObject;
 
-if (hello >= 4) {
-    foo();
-    hello = world;
-} else if (hello == 4) {
-    foo();
+if (bar.length >= 4) {
+    sayHiWithFancyArrowFunction('Alice');
+} else if (bar.length < 4) {
+    sayHiTo('Bob');
 } else {
-    foo();
+    sayHiTo('God');
 }
 
-hello++;
-
-hello => hello;
+function sayHiTo(name) {
+    return bar + name;
+}
+const sayHiWithFancyArrowFunction = name => {
+    return bar + name;
+};
 ```
 
 ### Output Logit Default
 
 ```js
-hello = 34;
-console.log('2:0', 'hello :', hello);
+let bar = 'hello ';
+console.log('2:0', 'bar :', bar);
+let foo = 'world';
+console.log('4:0', 'foo :', foo);
+let helloWorld = bar + foo;
+console.log('6:0', 'helloWorld :', helloWorld);
 
-function foo(varName1, varName2, varName3) {
-    console.log('5:4', 'varName3 :', varName3);
-    console.log('6:4', 'varName2 :', varName2);
-    console.log('7:4', 'varName1 :', varName1);
-    let newVar = varName1 * 2;
-    console.log('9:4', 'newVar :', newVar);
-}
+const testObject = { hello: 'Hi', world: 'Earth' };
+console.log('9:0', 'testObject :', testObject);
+const { hello, world } = testObject;
+console.log('11:0', 'world :', world);
+console.log('12:0', 'hello :', hello);
 
-if (hello >= 4) {
-    foo();
-    hello = world;
-    console.log('15:4', 'hello :', hello);
-} else if (hello == 4) {
-    foo();
+if (bar.length >= 4) {
+    sayHiWithFancyArrowFunction('Alice');
+} else if (bar.length < 4) {
+    sayHiTo('Bob');
 } else {
-    foo();
+    sayHiTo('God');
 }
 
-hello++;
-console.log('23:0', 'hello :', hello);
-
-hello => {
-    console.log('26:4', 'hello :', hello);
-    return hello;
+function sayHiTo(name) {
+    console.log('23:4', 'name :', name);
+    return bar + name;
+}
+const sayHiWithFancyArrowFunction = name => {
+    console.log('27:4', 'name :', name);
+    return bar + name;
 };
+console.log('30:0', 'sayHiWithFancyArrowFunction :', sayHiWithFancyArrowFunction);
 ```
 
 ### Output Logit Verbose
 
 ```js
-hello = 34;
-console.log('2:0', 'hello :', hello);
+let bar = 'hello ';
+console.log('2:0', 'bar :', bar);
+console.log('typeof bar :', typeof bar);
+let foo = 'world';
+console.log('5:0', 'foo :', foo);
+console.log('typeof foo :', typeof foo);
+let helloWorld = bar + foo;
+console.log('8:0', 'helloWorld :', helloWorld);
+console.log('typeof helloWorld :', typeof helloWorld);
+
+const testObject = { hello: 'Hi', world: 'Earth' };
+console.log('12:0', 'testObject :', testObject);
+console.log('typeof testObject :', typeof testObject);
+const { hello, world } = testObject;
+console.log('15:0', 'world :', world);
+console.log('typeof world :', typeof world);
+console.log('17:0', 'hello :', hello);
 console.log('typeof hello :', typeof hello);
 
-function foo(varName1, varName2, varName3) {
-    console.log('6:4', 'Function foo', 'varName3 :', varName3);
-    console.log('typeof varName3 :', typeof varName3);
-    console.log('8:4', 'Function foo', 'varName2 :', varName2);
-    console.log('typeof varName2 :', typeof varName2);
-    console.log('10:4', 'Function foo', 'varName1 :', varName1);
-    console.log('typeof varName1 :', typeof varName1);
-    let newVar = varName1 * 2;
-    console.log('13:4', 'Function foo', 'newVar :', newVar);
-    console.log('typeof newVar :', typeof newVar);
-}
-
-if (hello >= 4) {
-    console.log('18:4', 'In IfStatement (hello >= 4)');
-    foo();
-    hello = world;
-    console.log('21:4', 'hello :', hello);
-    console.log('typeof hello :', typeof hello);
-} else if (hello == 4) {
-    console.log('24:4', 'In IfStatement (hello == 4)');
-    foo();
+if (bar.length >= 4) {
+    console.log('21:4', 'In IfStatement (bar.length >= 4)');
+    sayHiWithFancyArrowFunction('Alice');
+} else if (bar.length < 4) {
+    console.log('24:4', 'In IfStatement (bar.length < 4)');
+    sayHiTo('Bob');
 } else {
     console.log('27:4', 'In ElseStatement.');
-    foo();
+    sayHiTo('God');
 }
 
-hello++;
-console.log('32:0', 'hello :', hello);
-console.log('typeof hello :', typeof hello);
-
-hello => {
-    console.log('36:4', 'hello :', hello);
-    console.log('typeof hello :', typeof hello);
-    return hello;
+function sayHiTo(name) {
+    console.log('32:4', 'Function sayHiTo', 'name :', name);
+    console.log('typeof name :', typeof name);
+    return bar + name;
+}
+const sayHiWithFancyArrowFunction = name => {
+    console.log('37:4', 'Function sayHiWithFancyArrowFunction', 'name :', name);
+    console.log('typeof name :', typeof name);
+    return bar + name;
 };
+console.log('41:0', 'sayHiWithFancyArrowFunction :', sayHiWithFancyArrowFunction);
+console.log('typeof sayHiWithFancyArrowFunction :', typeof sayHiWithFancyArrowFunction);
 ```
-
-### Example Usage Visual Studio Code
-
-![Example Usage Visual Studio Code](samples/readme/vscode1.gif)
 
 ### Example Usage Emacs
 
-![Example Usage Emacs](samples/readme/emacs2.gif)
+![Example Usage Emacs](samples/readme/logit-emacs3.gif)
+
+### Example Usage Visual Studio Code
+
+![Example Usage Visual Studio Code](samples/readme/logit-vscode1.gif)
+
+### Example Usage Atom
+
+![Example Usage Atom](samples/readme/logit-atom1.gif)
 
 ### Command Line Options
 
