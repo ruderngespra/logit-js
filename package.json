@@ -1,6 +1,6 @@
 {
     "name": "logit-js",
-    "version": "0.1.9",
+    "version": "0.2.0",
     "description": "lightweight debug utility",
     "main": "lib/transformString.js",
     "bin": {
