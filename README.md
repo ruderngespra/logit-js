@@ -185,4 +185,4 @@ logit("let test = 1;", {verbose: true});
 - option to set customized prettier settings instead of provided default
 
 ### Contributions
-Contributions are very much welcome.
+Contributions as well as bug reports are very much welcome.
