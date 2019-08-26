@@ -49,6 +49,6 @@
 		"vscode-test": "^1.2.0"
 	},
 	"dependencies": {
-		"logit-js": "^0.1.9"
+		"logit-js": "^0.2"
 	}
 }

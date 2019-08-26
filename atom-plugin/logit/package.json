@@ -17,6 +17,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "logit-js": "^0.1.9"
+    "logit-js": "^0.2"
   }
 }
