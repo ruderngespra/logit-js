@@ -10,7 +10,7 @@
         "lib": "lib"
     },
     "scripts": {
-        "test": "jest"
+        "test": "jest __tests__/integration/transformString.js"
     },
     "repository": {
         "type": "git",

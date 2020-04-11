@@ -2,36 +2,6 @@
 const transformString = require('./../lib/transformString.js');
 const testStrings = require('./../samples/automated_testing/provideTestStrings.js');
 
-// Dummy test:
-// xtest('two plus two is four', () => {
-//     expect(2 + 2).toBe(4);
-// });
-
-// test('transformString returns error if and only if input is no string', () => {
-//     let test = transformString([]);
-//     expect(test).toEqual(
-//         expect.objectContaining({ success: false, error: 'Invalid input type' })
-//     );
-//     test = transformString({ hello: 'world' });
-//     expect(test).toEqual(
-//         expect.objectContaining({ success: false, error: 'Invalid input type' })
-//     );
-//     test = transformString(234);
-//     expect(test).toEqual(
-//         expect.objectContaining({ success: false, error: 'Invalid input type' })
-//     );
-//     test = transformString(true);
-//     expect(test).toEqual(
-//         expect.objectContaining({ success: false, error: 'Invalid input type' })
-//     );
-//     test = transformString('testString');
-//     expect(test).toEqual(
-//         expect.not.objectContaining({
-//             error: 'Invalid input type',
-//         })
-//     );
-// });
-
 test('transformString universal verbose1', () => {
     expect(
         transformString(testStrings['normal1'].before, { verbose: true })
