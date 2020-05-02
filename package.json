@@ -10,7 +10,8 @@
         "lib": "lib"
     },
     "scripts": {
-        "test": "jest __tests__/integration/transformString.js"
+        "test": "jest __tests__/integration/transformString.js",
+        "debug": "jest __tests__/integration/transformString.js"
     },
     "repository": {
         "type": "git",

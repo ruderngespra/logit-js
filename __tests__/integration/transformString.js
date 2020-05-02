@@ -3,12 +3,16 @@ const testStrings = require('./../../samples/demo/provideTestStrings.js');
 
 describe('transformString method', () => {
   describe.only('default', () => {
+    test.only('transformString simpleStructures', () => {
+      const transformedString = transformString(testStrings['simpleStructures'].before)      
 
-    test('transformString simpleStructures', () => {
+      console.log('transformedString: ', transformedString);
+
+
       expect(transformString(testStrings['simpleStructures'].before)).toEqual({
         success: true,
         code: testStrings['simpleStructures'].after,
-      });
+      });      
     });
 
     test('transformString promise', () => {
