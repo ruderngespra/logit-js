@@ -1,0 +1,9 @@
+(dap-register-debug-template
+  "logit"
+  (list :type "node"
+        :request "attach"
+        :localRoot "/home/janko/it/logit"
+        :remoteRoot "/home/janko/it/logit"
+        :program "__ignored"
+        :port 9229
+        :name "logit"))

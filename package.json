@@ -10,8 +10,8 @@
         "lib": "lib"
     },
     "scripts": {
-        "test": "jest __tests__/integration/transformString.js",
-        "debug": "jest __tests__/integration/transformString.js"
+      "test": "jest",
+      "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand __tests__/integration/*.js"
     },
     "repository": {
         "type": "git",
