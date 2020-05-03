@@ -2,13 +2,10 @@ const transformString = require('./../../lib/transformString');
 const testStrings = require('./../../samples/demo/provideTestStrings.js');
 
 describe('transformString method', () => {
-  describe.only('default', () => {
-    test.only('transformString simpleStructures', () => {
+  describe('default', () => {
+    test('transformString simpleStructures', () => {
       const transformedString = transformString(testStrings['simpleStructures'].before)      
-
-      console.log('transformedString: ', transformedString);
-
-
+      console.log('transformedString: ', JSON.stringify(transformedString, null, 2));
       expect(transformString(testStrings['simpleStructures'].before)).toEqual({
         success: true,
         code: testStrings['simpleStructures'].after,
